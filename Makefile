@@ -1,0 +1,16 @@
+PROJECT = emqttd_kafka_bridge
+PROJECT_DESCRIPTION = EMQTTD Kafka Bridge
+PROJECT_VERSION = 2.0.7
+
+BUILD_DEPS = emqttd cuttlefish
+dep_emqttd = git https://github.com/emqtt/emqttd master
+dep_cuttlefish = git https://github.com/emqtt/cuttlefish
+
+COVER = true
+
+include erlang.mk
+
+app:: rebar.config
+
+app.config::
+	./deps/cuttlefish/cuttlefish -l info -e etc/ -c etc/emqttd_mongodb_plugin.conf -i priv/emqttd_mongodb_plugin.schema -d data
