@@ -22,7 +22,7 @@
 -export([start/2, stop/1]).
 
 start(_StartType, _StartArgs) ->
-    {ok, Sup} = emqttd_mongodb_plugins_sup:start_link(),
+    {ok, Sup} = emqttd_mongodb_plugin_sup:start_link(),
     ok = emqttd_access_control:register_mod(auth, emq_auth_emqttd_mongodb_plugin, []),
     ok = emqttd_access_control:register_mod(acl, emq_acl_emqttd_mongodb_plugin, []),
     emqttd_mongodb_plugin:load(application:get_all_env()),
