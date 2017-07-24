@@ -1,6 +1,11 @@
 # emqttd_mongodb_plugin
 A plugin for the EMQ broker to store the status of devices connecting via MQTT to a MongoDB database
 
+
+**This project is a sub-module of ConnectX IoT platform.**
+**Refer https://github.com/SkylineLabs/ConnectX-IoT-platform for more details**
+
+
 Install Plugin:
 -------
 
@@ -49,7 +54,4 @@ The purpose of timestamp:
 1) If connected is 0, then timestamp tells the last seen of the device
 2) If connected is 1, then timestamp tells the time since which the device is online
 
-
-**This project is a sub-module of ConnectX IoT platform.**
-**Refer https://github.com/SkylineLabs/ConnectX-IoT-platform for more details**
 
