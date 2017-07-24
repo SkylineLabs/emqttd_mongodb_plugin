@@ -2,6 +2,9 @@ PROJECT = emqttd_kafka_bridge
 PROJECT_DESCRIPTION = EMQTTD Kafka Bridge
 PROJECT_VERSION = 2.0.7
 
+DEPS = mongodb
+dep_mongodb = git https://github.com/comtihon/mongodb-erlang.git master
+
 BUILD_DEPS = emqttd cuttlefish
 dep_emqttd = git https://github.com/emqtt/emqttd master
 dep_cuttlefish = git https://github.com/emqtt/cuttlefish
