@@ -48,3 +48,8 @@ the corresponding document in the "thingsDB" in the corresponding collection "Ho
 The purpose of timestamp:
 1) If connected is 0, then timestamp tells the last seen of the device
 2) If connected is 1, then timestamp tells the time since which the device is online
+
+
+**This project is a sub-module of ConnectX IoT platform.**
+**Refer https://github.com/SkylineLabs/ConnectX-IoT-platform for more details**
+
