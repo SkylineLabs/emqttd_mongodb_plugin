@@ -16,7 +16,7 @@ git clone https://github.com/emqtt/emq-relx.git
 1. Add DEPS of the plugin in emq-relx/Makefile
 ```
 DEPS += emqttd_mongodb_plugin
-dep_emqttd_kafka_bridge = git https://github.com/SkylineLabs/emqttd_mongodb_plugin.git master
+dep_emqttd_mongodb_plugin = git https://github.com/SkylineLabs/emqttd_mongodb_plugin.git master
 ```
 3. Add plugin in emq-relx/relx.config
 ```
