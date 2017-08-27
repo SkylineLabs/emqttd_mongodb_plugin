@@ -1,5 +1,5 @@
-PROJECT = emqttd_kafka_bridge
-PROJECT_DESCRIPTION = EMQTTD Kafka Bridge
+PROJECT = emqttd_mongodb_plugin
+PROJECT_DESCRIPTION = EMQTTD MongoDB 
 PROJECT_VERSION = 2.0.7
 
 DEPS = mongodb
